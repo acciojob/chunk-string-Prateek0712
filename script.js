@@ -1,5 +1,10 @@
 function stringChop(str, size) {
   // your code here
+	let arr=[];
+	if(str==null)
+	{
+		return arr
+	}
 	let n=str.length;
 	if(size>=n)
 	{
@@ -7,7 +12,7 @@ function stringChop(str, size) {
 		return arr;
 	}
 	let i=0;
-	let arr=[];
+	
 	while(i<n)
 		{
 			let lastIdx=i+size;
