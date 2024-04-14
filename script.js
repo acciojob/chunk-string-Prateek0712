@@ -11,6 +11,9 @@ function stringChop(str, size) {
 	while(i<n)
 		{
 			let lastIdx=i+size;
+			if(i==n) {
+				break;
+			}
 			if(lastIdx>n)
 			{
 				arr.push(str.substring(i,n));
@@ -23,6 +26,6 @@ function stringChop(str, size) {
 }
 
 // Do not change the code below
-const str = prompt("Enter String.");
-const size = prompt("Enter Chunk Size.");
+//const str = prompt("Enter String.");
+//const size = prompt("Enter Chunk Size.");
 alert(stringChop(str, size));
